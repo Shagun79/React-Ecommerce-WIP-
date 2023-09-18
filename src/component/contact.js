@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Header from "./header";
 import Footer from "./footer";
 
 const Contact = () => {
-  const height =  -35;
+  const height = -35;
   return (
-    
     <>
       <Header />
       <div className="contact">
@@ -51,11 +50,11 @@ const Contact = () => {
               placeholder="Enter your message"
             />
 
-            <input type="submit" value="send"  className="Btn" />
+            <input type="submit" value="send" className="Btn" />
           </form>
         </div>
       </div>
-      <Footer height={height}/>
+      <Footer height={height} />
     </>
   );
 };

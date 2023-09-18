@@ -3,7 +3,7 @@ const Footer = (props) => {
   return (
     <>
       <div className="footer">
-        <div className="box-top" style={{ bottom:  `${props.height}rem` }}>
+        <div className="box-top" style={{ bottom: `${props.height}rem` }}>
           <div className="text-left">
             <p>Ready to get started?</p>
             <p>Talking to us today</p>

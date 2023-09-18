@@ -199,7 +199,6 @@ li a:hover:not(.active) {
   height: 3rem;
   margin: auto;
 
-
   margin-left: 1rem;
   text-align: center;
 }
@@ -257,14 +256,11 @@ form input {
 /* //Footer - STARTS // */
 
 .footer {
-
-
   background-color: #07273e;
   margin-top: 20rem;
 }
 
 .box-top {
-
   position: absolute;
   width: 70%;
   background-color: whitesmoke;
@@ -274,31 +270,25 @@ form input {
   left: 15rem;
   /* bottom: -60rem; */
 
-
   /* flex-direction: row; */
 }
 
 .text-left {
   margin: 3rem;
   margin-top: 1rem;
-
 }
 
 .btn-right {
   margin-left: 31rem;
   margin-top: 1rem;
-
-
 }
 
 .main-footer {
-
   margin-top: 5rem;
   display: flex;
   flex-direction: row;
   color: white;
 }
-
 
 .iconN {
   border-radius: 50%;
@@ -308,13 +298,12 @@ form input {
 }
 
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
-
 }
 
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 
@@ -329,13 +318,12 @@ form input {
 
 .box-2 {
   margin: 3rem;
-
 }
 
 .box-2 input {
   height: 2rem;
   width: 13rem;
-  text-align: center
+  text-align: center;
 }
 
 .box-3 {
@@ -345,3 +333,56 @@ form input {
 .box-4 {
   margin: 3rem;
 }
+/* FOOTER - ENDS */
+
+/* ERROR PAGE - STARTS  */
+
+.error-page{
+  
+  height: 5rem;
+ 
+  margin: auto;
+  margin-top: 6rem;
+}
+
+.error-page h2{
+  color: #55acee;
+}
+.error-page a{
+  text-decoration: none;
+}
+.error-home{
+  background-color: rgb(53, 53, 193);
+  /* Green */
+  border: none;
+ 
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  
+
+}
+.error-home a {
+  color: white;
+}
+.intro-data{
+  color: #125688;
+}
+
+.F-container{
+ 
+  margin: 2rem;
+}
+.grid-three-column{
+ 
+  display: flex;
+    margin-left: 6rem;
+}
+.grid-three-column a{
+  text-decoration: none;
+  color: gray;
+}
+.api-image{
+  width: 20rem;
+}
+
