@@ -1,24 +1,21 @@
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import React, { useContext } from "react";
+import { AppContext } from "./contextAPI";
+import Header from "./header";
 
-const Products = ({ id, name, image, price, category }) => {
+ import ProductCard from "./productCard";
+
+const Products = () => {
+  const { resJson } = useContext(AppContext);
+  console.log(resJson, "sajju");
   return (
     <>
-      <Link to={`/singleproduct/${id}`}>
-        <div className="card">
-          <figure>
-            <img src={image} alt={name} className="api-image" />
-            <figcaption className="caption"> {category} </figcaption>
-          </figure>
-        </div>
-
-        <div className="card-data">
-          <div className="card-data-flex">
-            <h3> {name}</h3>
-            <p className="card-data-price"> {price}</p>
-          </div>
-        </div>
-      </Link>
+      {" "}
+      <Header />
+      <div className="AllProducts">
+        {resJson.map((data, id) => {
+          return <ProductCard key={id} {...data} />;
+        })}
+      </div>
     </>
   );
 };

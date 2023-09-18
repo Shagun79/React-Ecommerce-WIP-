@@ -4,7 +4,7 @@ import React from "react";
 import Home from "./component/home";
 
 import About from "./component/about";
-import Products from "./component/products";
+ import Products from "./component/products";
 import Contact from "./component/contact";
 import ErrorPage from "./component/errorpage";
 import Cart from "./component/cart";
