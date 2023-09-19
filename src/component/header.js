@@ -33,7 +33,7 @@ const Header = () => {
             {" "}
             <Link to="/cart" className="Cart">
               {" "}
-              Cart <i class="fa fa-shopping-cart"></i>{" "}
+              Cart <i class="fa fa-shopping-cart"></i> (1)
             </Link>
           </li>
           <li>

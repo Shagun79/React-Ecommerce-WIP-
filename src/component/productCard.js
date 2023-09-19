@@ -1,8 +1,10 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; // Import Link from React Router
 import Headers from "./header";
 
 const ProductCard = ({ id, name, image, price, category }) => {
+  const [cart, setcart] = useState(0);
+  console.log(cart, "check")
   return (
     <>
       <Link to={`/singleproduct/${id}`}>
@@ -18,7 +20,17 @@ const ProductCard = ({ id, name, image, price, category }) => {
             <p className="card-data-price"> {price}</p>
           </div>
         </div>
-        <button className="btn"> ADD TO CART</button>
+        <i class="fa fa-shopping-cart" onClick={()=>{
+            setcart(1 + 1)
+        }}></i>
+        {/* <button
+          className="btn"
+         
+          
+        >
+          {" "}
+          ADD TO CART
+        </button> */}
       </Link>
     </>
   );
