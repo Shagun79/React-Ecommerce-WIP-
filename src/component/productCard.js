@@ -1,13 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from React Router
-import Headers from "./header";
 
-const ProductCard = ({ id, name, image, price, category }) => {
-  const [cart, setcart] = useState(0);
-  console.log(cart, "check")
+const ProductCard = ({  data,handleClick }) => {
+  const {image, price, name, id, category}=data
   return (
     <>
-      <Link to={`/singleproduct/${id}`}>
+      <div>
         <div className="card">
           <figure>
             <img src={image} alt={name} className="api-image" />
@@ -20,9 +17,12 @@ const ProductCard = ({ id, name, image, price, category }) => {
             <p className="card-data-price"> {price}</p>
           </div>
         </div>
-        <i class="fa fa-shopping-cart" onClick={()=>{
-            setcart(1 + 1)
-        }}></i>
+        <i
+          class="fa fa-shopping-cart"
+          onClick={() => {
+            handleClick(data);
+          }}
+        ></i>
         {/* <button
           className="btn"
          
@@ -31,7 +31,7 @@ const ProductCard = ({ id, name, image, price, category }) => {
           {" "}
           ADD TO CART
         </button> */}
-      </Link>
+      </div>
     </>
   );
 };

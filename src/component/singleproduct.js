@@ -1,5 +1,5 @@
 import React from "react";
-const SingleProductPage=()=>{
+const SingleProductPage=({ id, name, image, price, category})=>{
 
     return(
         <div>

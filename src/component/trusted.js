@@ -16,7 +16,7 @@ const Trusted = () => {
      
         <div className="item-one"  >
            <div>
-           <img src={img1} alt="Image 1" className="horozintal-row" />
+           <img src={img1} alt="1" className="horozintal-row" />
            </div>
            <div>
            <p>Text 1</p>
@@ -25,7 +25,7 @@ const Trusted = () => {
         </div>
         <div className="item">
             <div>
-            <img src={img2} alt="Image 2" className="horozintal-row" />
+            <img src={img2} alt="2" className="horozintal-row" />
 
             </div>
             <div>
@@ -36,7 +36,7 @@ const Trusted = () => {
         </div>
         <div className="item">
           <div>
-          <img src={img3} alt="Image 3" className="horozintal-row" />
+          <img src={img3} alt="3" className="horozintal-row" />
           </div>
           <div>
         
@@ -46,7 +46,7 @@ const Trusted = () => {
         </div>
         <div className="item">
           <div>
-          <img src={img4} alt="Image 4" className="horozintal-row" />
+          <img src={img4} alt="4" className="horozintal-row" />
           </div>
           <div>
           <p>Logic +</p>
@@ -56,7 +56,7 @@ const Trusted = () => {
         </div>
         <div className="item">
           <div>
-          <img src={img5} alt="Image 5" className="horozintal-row" />
+          <img src={img5} alt="5" className="horozintal-row" />
           </div>
           <div>
       

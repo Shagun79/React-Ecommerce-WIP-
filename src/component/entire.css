@@ -28,6 +28,15 @@ li a {
   padding: 20px 67px;
   text-decoration: none;
 }
+.cart{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px 67px;
+ 
+
+}
+
 
 li a:hover:not(.active) {
   background-color: #111;
@@ -401,4 +410,5 @@ form input {
   text-decoration: none;
   color: gray;
 }
+
 

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./entire.css";
 import logo from "./img/logomain.jpeg";
 
-const Header = () => {
+const Header = (props) => {
+
+  
   return (
     <>
       <div className="Navbar">
@@ -29,11 +31,10 @@ const Header = () => {
             {" "}
             <Link to="/contact"> Contact </Link>
           </li>
-          <li>
-            {" "}
-            <Link to="/cart" className="Cart">
-              {" "}
-              Cart <i class="fa fa-shopping-cart"></i> (1)
+          <li className="cart">
+            {/* Link to the cart page */}
+            <Link to="/cart">
+              Cart <i className="fa fa-shopping-cart"></i> ({props.size})
             </Link>
           </li>
           <li>
